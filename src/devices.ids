@@ -1,0 +1,19 @@
+
+	{
+		apci1710_BOARD_VENDOR_ID,
+		apci1710_BOARD_DEVICE_ID,
+		PCI_ANY_ID,
+		PCI_ANY_ID,
+		0,
+		0,
+		0
+	},
+	{
+		apcie1711_BOARD_VENDOR_ID,
+		apcie1711_BOARD_DEVICE_ID,
+		PCI_ANY_ID,
+		PCI_ANY_ID,
+		0,
+		0,
+		0
+	},	
