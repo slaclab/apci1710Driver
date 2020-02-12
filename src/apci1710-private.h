@@ -61,8 +61,15 @@
 #if LINUX_VERSION_CODE < KERNEL_VERSION(3,4,0)
 	#include <asm/system.h>
 #endif
-#include <asm/uaccess.h>
-#include <asm/bitops.h>
+
+#if LINUX_VERSION_CODE >= KERNEL_VERSION(4, 14, 139)
+    #include <linux/uaccess.h>
+    #include <linux/uaccess.h>
+#else
+    #include <asm/uaccess.h>
+    #include <asm/bitops.h>
+#endif
+
 #include <linux/sched.h>
 
 #include <linux/interrupt.h>
